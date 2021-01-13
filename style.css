@@ -7,15 +7,16 @@ section {
   left: 30px;
   top: 5px;
   display: block;
-  width: 400px;
-  height: 160px;
+  width: 600px;
+  height: 300px;
+  text-indent: 20px;
   background: white;
 }
 
 h1{color:grey;}
 h1 {
   text-align: center;
-  text-indent: 50px;
+  font-family: sans-serif;
 }
 
 
