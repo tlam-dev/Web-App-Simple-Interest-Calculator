@@ -1,3 +1,4 @@
+/* CSS styles */
 body {
   background: black;
 }
@@ -5,22 +6,73 @@ body {
 section {
   position: absolute;
   left: 50px;
-  top: 5px;
+  top: 10px;
   display: block;
-  padding: 20px;
-  width: 400px;
-  height: 200px;
+  width: 520px;
   border-radius: 20px;
   background: white;
 }
 
 h1{
   color:grey;
-  text-align: center;}
+  text-align: center;
+  font-family: verdana;
+  font-size: 32px;}
 
-section {
-  text-indent: 100px;
-  font-family: sans-serif;
+p {
+  text-align: left;
+  padding-left: 120px;
+  line-height: 200%;
+  font-family: arial;
 }
 
+h4 {
+  padding-left: 20px;
+  font-family: arial;
+  font-weight: normal;
+}
+     
+#principal {
+  margin-left: 60px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin-left: 25px;
+  height: 8px;
+  border-radius: 5px;
+  background: rgb(0, 100, 255);
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  color: rgb(230, 230, 230);
+  margin
+  
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgb(0, 100, 255);
+  cursor: pointer;
+}
+
+#years {
+  margin-left: 28px;
+}
+
+button {
+  border-color: #000000;
+  border-width: 1px;
+  border-radius: 3px;
+  background: rgb(230, 230, 230);
+}
+
+span {
+  font-family: arial;
+}
 
