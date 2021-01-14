@@ -4,17 +4,21 @@ body {
 
 section {
   position: absolute;
-  left: 30px;
+  left: 50px;
   top: 5px;
   display: block;
-  width: 600px;
-  height: 300px;
+  width: 400px;
+  height: 250px;
+  border-radius: 20px
   text-indent: 20px;
   background: white;
 }
 
-h1{color:grey;}
-h1 {
+h1{
+  color:grey;
+  text-align: center;}
+
+section {
   text-align: center;
   font-family: sans-serif;
 }
