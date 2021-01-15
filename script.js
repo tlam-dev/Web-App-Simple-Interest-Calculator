@@ -14,6 +14,5 @@ function compute() {
               + "at an interest rate of " + "<mark>" + r + "%," + "</mark>" + "<br/>"
               + "You will receive an amount of " + "<mark>" +result + "</mark>" +"," + "<br/>"
               + "in the year " +" <mark>" + y + "</mark>" + ".");
-            } else {document.getElementById("output").innerHTML =
-              "Please enter a positive amount."}
+            } else alert("*Please enter a positive amount.*")}
         }
