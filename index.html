@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+<!-- Area of white block -->
         <section>
         <h1>Simple Interest Calculator</h1>
           <label>
@@ -11,6 +12,7 @@
           </label>
         <br/>
           <label>
+<!-- Value as integer, shall be converted into percentage in script -->
           Interest Rate <input type="range" min="0" max="20" value="10"
                          step="0.50" class="slider" id="rate" 
                          oninput="this.nextElementSibling.value = this.value">
@@ -38,31 +40,14 @@
           </label>
         <br/>
 
+<!-- Call script function on click -->
         <button onclick="compute()">Compute Interest</button><br/>
-        <!-- <script src="script.js"></script> -->
-        <script>
-        function compute() {
-            var p = parseFloat(document.getElementById("principal").value);
-            var r = parseFloat(document.getElementById("rate").value);
-            var t = parseFloat(document.getElementById("years").value);
-            var result = (p * (1 + (r*t /100)) - p).toFixed(2);
-    
-            var currentY = new Date().getFullYear();
-            var y = parseFloat(currentY) + t;
-            
-            if(!isNaN(p)) {
-            document.getElementById("output").innerHTML =
-              ("If you deposit " + "<mark>" + p + "</mark>" + "," + "<br/>"
-              + "at an interest rate of " + "<mark>" + r + "%," + "</mark>" + "<br/>"
-              + "You will receive an amount of " + "<mark>" +result + "</mark>" +"," + "<br/>"
-              + "in the year " +" <mark>" + y + "</mark>" + ".");
-            } else {document.getElementById("output").innerHTML =
-              "Please enter an amount."}
-        }
-        </script>
+        <script src="script.js"></script>
+<!-- Display the result of the function -->
         <p id="output"></p>
-          
+<!-- Copyrights -->          
         <h4>© Everyone Can Get Rich</h4>
         </section>
+<!-- End of white block -->
     </body>
 </html>
