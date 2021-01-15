@@ -1,4 +1,4 @@
-/* CSS styles */
+/* CSS styles (optimized for Safari/Chrome) */
 body {
   background: black;
 }
@@ -94,7 +94,7 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer;
 }
 
-/*Sorry I only use Safari/Chrome, hope it looks fine in Firefox*/
+/*Sorry that I only use Safari/Chrome, hope it looks fine in Firefox*/
 input[type=range]::-moz-range-progress {
   background: rgb(0, 100, 255);
 }
