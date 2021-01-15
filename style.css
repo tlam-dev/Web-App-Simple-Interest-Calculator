@@ -4,7 +4,6 @@ body {
 }
 
 section {
-  -webkit-appearance: none;
   position: absolute;
   left: 50px;
   top: 10px;
@@ -106,4 +105,8 @@ input[type=range]:focus {
 
 #years {
   margin-left: 28px;
+}
+
+mark {
+  background-color: yellow;
 }
