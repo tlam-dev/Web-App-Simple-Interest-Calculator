@@ -1,16 +1,14 @@
-function compute()
-{
-    p = document.getElementById("principal").value;
-    r = document.getElementById("rate").value;
-    y = document.getElementById("years").value;
+// JavaScript
+function compute() {
+    var p = parseFloat(document.getElementById("principal").value);
+    var r = document.getElementById("rate").value;
+    var t = document.getElementById("years").value;
     
-    currentY = new Date().getFullYear();
-    result = p * (100 + r) /100;
-    return result;
+    var y = new Date().getFullYear();
+    var result = p * (1 + (r*t /100);
     
-    console.log("If you deposit " + principal + ",");
-    console.log("at an interest rate of " + rate + "%,");
-    console.log("You will receive an amount of " + result + ",");
-    console.log("in the year " + (currentY + y) + "years."
-}
-        
+    document.getElementById("output").innerHTML =
+              ("If you deposit ," + "<br/>"
+              + "at an interest rate of %," + "<br/>"
+              + "You will receive an amount of ," + "<br/>"
+              + "in the year .");}
