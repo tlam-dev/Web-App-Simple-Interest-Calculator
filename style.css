@@ -19,15 +19,30 @@ h1{
   font-family: verdana;
   font-size: 32px;}
 
-p {
+label {
   text-align: left;
   padding-left: 120px;
   line-height: 200%;
   font-family: arial;
 }
 
+button {
+  -webkit-appearance: none;
+  margin-left: 120px;
+  border-radius: 3px;
+  border-color: #000000;
+  border-width: 1px;
+  background-color: rgb(230, 230, 230);;
+}
+
+p{
+  text-align: left;
+  font-family: arial;
+  margin-left: 120px;
+}
+
 h4 {
-  padding-left: 20px;
+  padding-left: 25px;
   font-family: arial;
   font-weight: normal;
 }
@@ -38,17 +53,25 @@ h4 {
 
 input[type="range"] {
   -webkit-appearance: none;
+  -moz-appearance: none;
   margin-left: 25px;
-  height: 8px;
-  border-radius: 5px;
-  background: rgb(0, 100, 255);
-  outline: none;
 }
-
+          
 input[type="range"]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
-  color: rgb(230, 230, 230);
-  margin
+  height: 8px;
+  border-radius: 5px;
+  background-color: rgb(0, 100, 255);
+  outline: none;
+  
+}
+
+input[type="range"]::-moz-range-track {
+  -moz-appearance: none;
+  height: 8px;
+  border-radius: 5px;
+  background-color: rgb(230, 230, 230);
+  outline: none;
   
 }
 
@@ -58,21 +81,28 @@ input[type="range"]::-webkit-slider-thumb {
   height: 15px;
   border-radius: 50%;
   background: rgb(0, 100, 255);
+  margin-top: -3px;
   cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgb(0, 100, 255);
+  cursor: pointer;
+}
+
+/*Sorry I only use Safari/Chrome, hope it looks fine in Firefox*/
+input[type=range]::-moz-range-progress {
+  background: rgb(0, 100, 255);
+}
+
+input[type=range]:focus {
+    outline: none;
 }
 
 #years {
   margin-left: 28px;
 }
-
-button {
-  border-color: #000000;
-  border-width: 1px;
-  border-radius: 3px;
-  background: rgb(230, 230, 230);
-}
-
-span {
-  font-family: arial;
-}
-
