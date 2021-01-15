@@ -1,5 +1,4 @@
 // JavaScript
-// JavaScript
 function compute() {
             var p = parseFloat(document.getElementById("principal").value);
             var r = parseFloat(document.getElementById("rate").value);
@@ -9,12 +8,12 @@ function compute() {
             var currentY = new Date().getFullYear();
             var y = parseFloat(currentY) + t;
             
-            if(!isNaN(p)) {
+            if(!isNaN(p) && p > 0) {
             document.getElementById("output").innerHTML =
               ("If you deposit " + "<mark>" + p + "</mark>" + "," + "<br/>"
               + "at an interest rate of " + "<mark>" + r + "%," + "</mark>" + "<br/>"
               + "You will receive an amount of " + "<mark>" +result + "</mark>" +"," + "<br/>"
               + "in the year " +" <mark>" + y + "</mark>" + ".");
             } else {document.getElementById("output").innerHTML =
-              "Please enter an amount."}
+              "Please enter a positive amount."}
         }
